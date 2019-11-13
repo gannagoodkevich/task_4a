@@ -3,33 +3,33 @@ class AboutVariables
   @@foo = 'was '  + foo + ", became class foo"
 
   def initialize
-		@foo = 'instance foo'
+    @foo = 'instance foo'
   end
 
-	def show_local_foo
-	   puts foo #local_foo
-	end
+  def show_local_foo
+    puts foo #local_foo
+  end
 
-	def show_class_foo
-  	puts @@foo
-	end
+  def show_class_foo
+    puts @@foo
+  end
 
-	def show_instance_foo
- 		puts @foo
-	end
+  def show_instance_foo
+    puts @foo
+  end
 
-	class << self
- 		def show_local_foo
-			puts foo #local_foo
-	  end
+  class << self
+    def show_local_foo
+      puts foo #local_foo
+    end
 
-	  def show_class_foo
-			puts @@foo
-  	end
+    def show_class_foo
+      puts @@foo
+    end
 
-	  def show_instance_foo
-		 	puts @foo
-	  end
+    def show_instance_foo
+      puts @foo
+    end
   end
 end
 
